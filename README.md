@@ -73,35 +73,37 @@ Every experiment fixes `SEED = 42` (with small, deterministic per-fold/per-run o
 
 ## Screenshots
 
-Yes — add a few screenshots before you push this. A results README reads much better with visual proof of the run alongside the numbers. You already have two good ones from your results summary; re-save them (and a couple more) as PNGs under `assets/`, then reference them like this:
+
 
 ```markdown
-### Confusion matrix (Part 7, held-out test set)
-![Confusion matrix](assets/confusion_matrix.png)
+### Confusion matrix
 
-### Part 6 regularisation study — run log
-![Part 6 run log](assets/part6_run_log.png)
+<img width="900" height="800" alt="image" src="https://github.com/user-attachments/assets/b15e542c-f1ca-4f25-ab13-41b3e2a776df" />
+
+
+
+### Part 6 regularisation study —
+
+ <img width="1105" height="674" alt="image" src="https://github.com/user-attachments/assets/5a1bf55d-cedc-484f-988f-042c59a12bd2" />
+
+
+###  Final test Accuracy
+
+<img width="910" height="444" alt="image" src="https://github.com/user-attachments/assets/35fadf8e-5ddf-4682-a565-9d79b5f9db27" />
+
+
 ```
 
-Suggested set (all of these already exist as plots/outputs in your executed notebook — just re-save each as a PNG and place it under `assets/`):
 
-- `assets/confusion_matrix.png` — the Part 7 confusion matrix (you already have this).
-- `assets/part6_run_log.png` — the Part 6 timing log (you already have this).
-- `assets/class_distribution.png` — the train/val/test class-balance bar chart from Part 0.
-- `assets/activation_val_loss.png` — the four-activation validation-loss comparison from Part 2.
-- `assets/overfitting_gap.png` — the train-vs-validation loss plot from Part 5, with the divergence point marked.
-- `assets/regularisation_gap_curves.png` — the gap-vs-L2-strength and gap-vs-dropout-rate plots from Part 6.
-
-You don't need all six — the confusion matrix and the overfitting plot carry the most weight for a reader skimming the repo, so start there if you're short on time.
 
 ---
 
 ## Notes on the results
 
-The final tuned model (86.25% test accuracy) is a modest, genuine improvement over the earlier baseline models in this project — not a dramatic one, and that's an honest reflection of the setup rather than a shortcoming: Fashion-MNIST classified with a plain MLP (no convolutional structure) has a fairly low ceiling, and the Part 2 baseline was already reasonably well-tuned before Part 7's search began. The more interesting finding is methodological — that **training-set size dominated every regularisation technique tested** for closing the overfitting gap on this architecture, which is a useful, transferable lesson independent of the specific accuracy numbers.
+The final tuned model (86.25% test accuracy) is a modest, genuine improvement over the earlier baseline models in this project  not a dramatic one, and that's an honest reflection of the setup rather than a shortcoming: Fashion-MNIST classified with a plain MLP (no convolutional structure) has a fairly low ceiling, and the Part 2 baseline was already reasonably well-tuned before Part 7's search began. The more interesting finding is methodological — that **training-set size dominated every regularisation technique tested** for closing the overfitting gap on this architecture, which is a useful, transferable lesson independent of the specific accuracy numbers.
 
 ---
 
 ## Author
 
-Shahmeer — BSCS, FAST-NUCES (Cybersecurity specialisation)
+Shahmeer Haider— BSCS, FAST-NUCES

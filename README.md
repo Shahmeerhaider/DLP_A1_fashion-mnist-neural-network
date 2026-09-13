@@ -75,7 +75,6 @@ Every experiment fixes `SEED = 42` (with small, deterministic per-fold/per-run o
 
 
 
-```markdown
 ### Confusion matrix
 
 <img width="900" height="800" alt="image" src="https://github.com/user-attachments/assets/b15e542c-f1ca-4f25-ab13-41b3e2a776df" />

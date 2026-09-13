@@ -69,7 +69,7 @@ No extra installation is required — `torch`, `numpy`, `pandas`, `scikit-learn`
 
 Every experiment fixes `SEED = 42` (with small, deterministic per-fold/per-run offsets wherever multiple independent draws are needed, e.g. cross-validation folds). The test set is loaded once at the top of the notebook and is not touched again until the single evaluation cell in Part 7 — there is no test-set leakage during model selection.
 
----
+
 
 ## Screenshots
 
@@ -90,9 +90,6 @@ Every experiment fixes `SEED = 42` (with small, deterministic per-fold/per-run o
 ###  Final test Accuracy
 
 <img width="910" height="444" alt="image" src="https://github.com/user-attachments/assets/35fadf8e-5ddf-4682-a565-9d79b5f9db27" />
-
-
-```
 
 
 
